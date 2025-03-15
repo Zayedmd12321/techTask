@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+    width: 288px;
+    height: 512px;
+    background: url(gallery/sprites/background.png);
+}
+
+#base {
+    width: 288px;
+    height: 110px;
+    bottom: 0;
+    position: absolute;
+    background: url(gallery/sprites/base.png) no-repeat;
+}
+
+#player {
+    position: absolute;
+    width: 34px;
+    height: 24px;
+    left: 25px;
+    top: 189px;        /*Center of gameArea = (game-container height - base height-player height)/2*/
+    background: url(gallery/sprites/bird.png) no-repeat;
+}
