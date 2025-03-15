@@ -17,6 +17,36 @@
     width: 288px;
     height: 512px;
     background: url(gallery/sprites/background.png);
+    overflow: hidden;
+}
+
+.lower-pipe {
+    position: absolute;
+    width: 52px;
+    background: #583E3E;
+    right: -207px;
+    bottom: 110px;
+    background: url(gallery/sprites/pipe.png) no-repeat;
+    animation: pipe 3s linear infinite;
+}
+
+.upper-pipe {
+    position: absolute;
+    width: 52px;
+    background: #583E3E;
+    right: -207px;
+    background: url(gallery/sprites/pipe.png) no-repeat;
+    transform: rotate(180deg);
+    animation: pipe 3s linear infinite;
+}
+
+@keyframes pipe {
+    from{
+        right: -207px;
+    }
+    to{
+        right: 288px;
+    }
 }
 
 #base {
