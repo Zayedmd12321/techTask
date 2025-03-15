@@ -4,8 +4,8 @@ const baseHeight = 110;
 
 const gameArea = screenHeight-baseHeight;
 
-let lowerPipe1 = document.querySelector('.lower-pipe');
-let upperPipe1 = document.querySelector('.upper-pipe');
+let lowerPipe = document.querySelector('.lower-pipe');
+let upperPipe = document.querySelector('.upper-pipe');
 
 lowerPipe.addEventListener('animationiteration',() => {
     const offset = parseInt(gameArea*0.3);
