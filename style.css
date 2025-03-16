@@ -71,3 +71,12 @@
     top: 189px;        /*Center of gameArea = (game-container height - base height-player height)/2*/
     background: url(gallery/sprites/bird.png) no-repeat;
 }
+
+.game-over {
+    position: absolute;
+    background: url(gallery/sprites/gameover.png);
+    width: 192px;
+    height: 42px;
+    left: 17%;
+    top: 23%;
+}
