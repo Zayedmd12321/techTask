@@ -29,6 +29,16 @@
     height: 267px;
 }
 
+.game-score {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    font-size: large;
+    left: 10px;
+    top: 10px;
+}
+
 .lower-pipe {
     position: absolute;
     width: 52px;
@@ -50,7 +60,7 @@
 }
 
 @keyframes pipe {
-    to{
+    to {
         right: 288px;
     }
 }
@@ -68,7 +78,8 @@
     width: 34px;
     height: 24px;
     left: 25px;
-    top: 189px;        /*Center of gameArea = (game-container height - base height-player height)/2*/
+    top: 189px;
+    /*Center of gameArea = (game-container height - base height-player height)/2*/
     background: url(gallery/sprites/bird.png) no-repeat;
 }
 
@@ -80,14 +91,18 @@
     left: 17%;
     top: 23%;
 }
-.score{
-    position: absolute;
 
-    height: 19px;
-    left: 35%;
-    top: 40%;
+.score {
+    position: absolute;
+    left: 25%;
+    top: 42%;
     font-family: "Press Start 2P", system-ui;
-  font-weight: 400;
-  font-style: normal;
-    color: rgba(255, 123, 0, 0.963);
+    color: #fca444;
+    text-shadow: 
+        -2px -2px 0 #FFFFFF,  
+         2px -2px 0 #FFFFFF,
+        -2px  2px 0 #FFFFFF,
+         2px  2px 0 #FFFFFF,
+         0px  2px 0 #FF7C18; 
+    font-size: 22px;
 }
