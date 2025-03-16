@@ -20,20 +20,11 @@
     overflow: hidden;
 }
 
-.message {
-    position: absolute;
-    top: 12%;
-    left: 19%;
-    background: url(gallery/sprites/message.png);
-    width: 184px;
-    height: 267px;
-}
-
 .lower-pipe {
     position: absolute;
     width: 52px;
     background: #583E3E;
-    right: -52px;
+    right: -207px;
     bottom: 110px;
     background: url(gallery/sprites/pipe.png) no-repeat;
     animation: pipe 3s linear infinite;
@@ -43,13 +34,16 @@
     position: absolute;
     width: 52px;
     background: #583E3E;
-    right: -52px;
+    right: -207px;
     background: url(gallery/sprites/pipe.png) no-repeat;
     transform: rotate(180deg);
     animation: pipe 3s linear infinite;
 }
 
 @keyframes pipe {
+    from{
+        right: -207px;
+    }
     to{
         right: 288px;
     }
