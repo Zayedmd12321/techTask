@@ -102,11 +102,17 @@ function checkCollision(bird) {
 
 function gameOver() {
     clearInterval(fallInterval);
-    score = 0;
+    if (score%2 ===0)
+        {score = score/2;}
+    else
+        {score = (score-1)/2;}
+    
     gameContainer.innerHTML = `
         <div id="base"></div>
         <div class="game-over"></div>
+        <div class = "score">Score:${score}</div>
     `;
+    score = 0;
     window.onkeydown = () => {
         welcome();
     };
