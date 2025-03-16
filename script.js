@@ -88,10 +88,9 @@ function checkCollision(bird) {
     const birdRect = bird.getBoundingClientRect();
     const lowerPipeRect = lowerPipe.getBoundingClientRect();
     const upperPipeRect = upperPipe.getBoundingClientRect();
-
+    birdTop = parseInt(window.getComputedStyle(bird).getPropertyValue('top'));
     if (
-        birdRect.bottom > gameArea ||
-        birdRect.top < 0 ||
+        birdTop <= 0 || birdTop >= gameArea - bird.clientHeight ||
         (birdRect.right > lowerPipeRect.left && birdRect.left < lowerPipeRect.right &&
             birdRect.bottom > lowerPipeRect.top) ||
         (birdRect.right > upperPipeRect.left && birdRect.left < upperPipeRect.right &&
